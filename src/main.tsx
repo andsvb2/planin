@@ -7,7 +7,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 //import App from './App.tsx'
 import '@css/index.css'
-import Login from './Login.tsx';
+import Login from './pages/Login.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
