@@ -5,7 +5,7 @@ body {
     margin: 0;
     background-color: #ffffff;
     height: 100%;
-    width: 100%;
+    width: 100%
 }
 
 .login-container {
@@ -14,13 +14,8 @@ body {
 }
 
 .side-image {
-    width: 52%;
-    /* Make the image responsive */
-    max-width: 100%;
-    /* Set a maximum width */
-    margin-top: -230px;
-    margin-left: -700px;
-    /* Adjust margin as needed */
+    width: 730px;
+    margin-top: -220px;
 }
 
 .login-content {
@@ -28,47 +23,18 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* Center content horizontally */
 }
 
 .logo {
-    width: 100%;
-    /* Make the logo responsive */
-    max-width: 400px;
-    /* Set a maximum width */
+    width: 400px;
     margin-bottom: 20px;
-    margin-top: 25px;
     margin-left: 950px;
+    margin-top: 30px;
 }
 
 h1 {
-    max-width: 500px;
     font-size: 32px;
     color: #2d8feb;
-    /* Center the heading */
-    margin-top: -145px;
     margin-left: 950px;
-    /* Adjust margin as needed */
-}
-
-
-/* Media query for smaller screens */
-
-@media (max-width: 768px) {
-    .side-image {
-        width: 40%;
-        margin-top: -15px;
-        /* Hide the side image on smaller screens */
-    }
-    .logo {
-        width: 15%;
-        /* Make the logo take full width on smaller screens */
-        /* Remove the maximum width */
-        margin-left: 150px;
-        margin-top: 30px;
-        /* Adjust margin as needed */
-        margin-right: 0;
-    }
-    h1 {}
+    margin-top: -140px;
 }
