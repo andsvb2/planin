@@ -21,7 +21,8 @@
       "@comp/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@services/*": ["services/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@api/*": ["api/*"],
     },
 
     /* Linting */
