@@ -12,7 +12,6 @@ const Login: React.FC = () => {
   return (
     <Container
       component="main"
-      maxWidth="false"
       sx={{ width: "100dvw", height: "100dvh" }}
       disableGutters
     >
@@ -39,7 +38,7 @@ const Login: React.FC = () => {
             <img
               src={sideImage}
               alt="Imagem Lateral"
-              style={{ maxWidth: "100%", maxHeight: "100%" }}
+              style={{ maxWidth: "100%", maxHeight: "100%", marginLeft: "-15rem" }}
             />
           </Box>
         </Grid>
@@ -60,7 +59,7 @@ const Login: React.FC = () => {
               alt="Logo"
               sx={{
                 width: "80%",
-                maxWidth: 440,
+                maxWidth: 400,
                 marginBottom: "1rem",
                 marginTop: "3rem",
               }}
@@ -69,7 +68,7 @@ const Login: React.FC = () => {
               component="img"
               src={botaoGLogin}
               alt="Logo"
-              sx={{ width: "80%", maxWidth: 311, marginBottom: "10rem" }}
+              sx={{ width: "80%", maxWidth: 300, marginBottom: "10rem" }}
             />
             <Box
               sx={{
@@ -87,7 +86,8 @@ const Login: React.FC = () => {
                   color: "#2D8FEB",
                   fontWeight: "bold",
                   textAlign: "center",
-                  marginTop: "-13rem",
+                  marginTop: "-11rem",
+                  whiteSpace: "nowrap",
                 }}
               >
                 Planeje as suas atividades com <br /> mais facilidade e
