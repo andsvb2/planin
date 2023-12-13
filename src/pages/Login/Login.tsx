@@ -140,12 +140,11 @@ const Login: React.FC = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          minHeight: "100vh",
           backgroundColor: "white",
         }}
       >
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5.86}>
             <Box
               sx={{
                 display: "flex",
@@ -177,13 +176,13 @@ const Login: React.FC = () => {
                 component="img"
                 src={planinLogo}
                 alt="Logo"
-                sx={{ width: "80%", maxWidth: 440, marginBottom: "1rem" }}
+                sx={{ width: "80%", maxWidth: 440, marginBottom: "1rem", marginTop: "3rem" }}
               />
               <Box
                 component="img"
                 src={botaoGLogin}
                 alt="Logo"
-                sx={{ width: "80%", maxWidth: 311, marginBottom: "1rem" }}
+                sx={{ width: "80%", maxWidth: 311, marginBottom: "10rem" }}
               />
               <Box
                 sx={{
@@ -201,6 +200,7 @@ const Login: React.FC = () => {
                     color: "#2D8FEB",
                     fontWeight: "bold",
                     textAlign: "center",
+                    marginTop: "-13rem",
                   }}
                 >
                   Planeje as suas atividades com <br /> mais facilidade e
