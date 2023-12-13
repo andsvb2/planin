@@ -90,7 +90,7 @@ const Login: React.FC = () => {
                   whiteSpace: "nowrap",
                 }}
               >
-                Planeje as suas atividades com <br /> mais facilidade e
+                Planeje as suas atividades com <br />mais facilidade e
                 eficiência
               </Typography>
             </Box>
