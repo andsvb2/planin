@@ -9,7 +9,9 @@ import planinLogo from "@img/logo.svg";
 import supabase from "@api/supabase";
 
 const Login: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async function handleSignInWithGoogle(response) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { data, error } = await supabase.auth.signInWithIdToken({
       provider: "google",
       token: response.credential,
