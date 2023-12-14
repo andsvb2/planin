@@ -14,11 +14,33 @@ import "@fontsource/lato/700.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "@pages/Login";
 import Teste from "@pages/Teste.tsx";
+import { Home } from "@pages/Home";
+import { Calendario } from "@pages/Calendario";
+import { Curso } from "@pages/Curso";
+import { Disciplina } from "@pages/Disciplina";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
+    children: [
+      {
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "calendario",
+        element: <Calendario />,
+      },
+      {
+        path: "curso",
+        element: <Curso />,
+      },
+      {
+        path: "disciplina",
+        element: <Disciplina />,
+      },
+    ],
   },
   {
     path: "/teste",
