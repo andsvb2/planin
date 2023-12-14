@@ -6,9 +6,19 @@ import Typography from "@mui/material/Typography";
 
 import sideImage from "@img/studying-background.png";
 import planinLogo from "@img/logo.svg";
-import botaoGLogin from "@img/botao-login-google.png";
+import supabase from "@api/supabase";
 
 const Login: React.FC = () => {
+  async function handleSignInWithGoogle(response) {
+    const { data, error } = await supabase.auth.signInWithIdToken({
+      provider: "google",
+      token: response.credential,
+      nonce: "NONCE", // must be the same one as provided in data-nonce (if any)
+    });
+  }
+
+  const GOOGLE_DATA_CLIENT_ID = import.meta.env.VITE_GOOGLE_DATA_CLIENT_ID;
+
   return (
     <Container
       component="main"
@@ -59,12 +69,27 @@ const Login: React.FC = () => {
                 marginTop: "3rem",
               }}
             />
-            <Box
-              component="img"
-              src={botaoGLogin}
-              alt="Logo"
-              sx={{ width: "80%", maxWidth: 300, marginBottom: "10rem" }}
-            />
+            <Box>
+              <div
+                id="g_id_onload"
+                data-client_id={GOOGLE_DATA_CLIENT_ID}
+                data-context="signin"
+                data-ux_mode="popup"
+                data-callback="handleSignInWithGoogle"
+                data-nonce=""
+                data-auto_prompt="false"
+              ></div>
+
+              <div
+                className="g_id_signin"
+                data-type="standard"
+                data-shape="rectangular"
+                data-theme="outline"
+                data-text="continue_with"
+                data-size="large"
+                data-logo_alignment="left"
+              ></div>
+            </Box>
             <Box
               sx={{
                 width: "100%",
