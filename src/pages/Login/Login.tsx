@@ -15,15 +15,6 @@ const Login: React.FC = () => {
       sx={{ width: "100dvw", height: "100dvh" }}
       disableGutters
     >
-      {/*<Box*/}
-      {/*  sx={{*/}
-      {/*    display: "flex",*/}
-      {/*    flexDirection: "column",*/}
-      {/*    alignItems: "center",*/}
-      {/*    justifyContent: "center",*/}
-      {/*    backgroundColor: "white",*/}
-      {/*  }}*/}
-      {/*>*/}
       <Grid container spacing={3}>
         <Grid item xs={12} md={7}>
           <Box
@@ -38,7 +29,11 @@ const Login: React.FC = () => {
             <img
               src={sideImage}
               alt="Imagem Lateral"
-              style={{ maxWidth: "100%", maxHeight: "100%", marginLeft: "-15rem" }}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                marginLeft: "-15rem",
+              }}
             />
           </Box>
         </Grid>
@@ -90,8 +85,8 @@ const Login: React.FC = () => {
                   whiteSpace: "nowrap",
                 }}
               >
-                Planeje as suas atividades com <br />mais facilidade e
-                eficiência
+                Planeje as suas atividades com <br />
+                mais facilidade e eficiência
               </Typography>
             </Box>
           </Box>
